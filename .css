@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+    padding: 20px;
+    background-color: #888;
+    border-radius: 8px;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.number, .zero, .decimal {
+    background-color: #fff;
+}
+
+.add, .subtract, .multiply, .divide, .equals {
+    background-color: #fe9241;
+    color: #fff;
+}
+
+.clear {
+    background-color: #f00;
+    color: #fff;
+    grid-column: 1 / 3;
+}
